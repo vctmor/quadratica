@@ -9,5 +9,5 @@ Portanto, não me empenhei em estilizar com css, por exemplo, nem mesmo busquei 
 ## para outras versões:
 
 * Reescrever em react.
-* Refatorar o código js.
+* Refatorar o código js fudamentado pelo SOLID.
 * Estilizar com CSS.
