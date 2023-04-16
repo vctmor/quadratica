@@ -19,14 +19,17 @@ function roots(a, b, c){
     d = delta(a, b, c);
     
     if (d < 0){
-        
+         var resultado = "As raizes não pertencem ao conjunto dos números reais";
+         
         console.log(d + " irreal ");
-        prompt(-1,-1);
+        document.getElementById("resultado").innerHTML = resultado;
     }
     if (d == 0){
         x1 = (-b + d**0.5)/2;
+
+        //let resultado = "As raizes são iguais: ";
         
-        console.log("discriminante igual a: " + d + " as raizes sao iguais, x1=x2= " + x1);
+       document.getElementById("resultado").innerHTML = x1;
         prompt(x1,x1);
     }
     if (d > 0){
@@ -34,6 +37,10 @@ function roots(a, b, c){
        x1 = (-b + d**0.5)/(2*a);
       
        x2 = (-b - d**0.5)/(2*a);
+
+       var resultado = "As raizes reais e distintas: ";
+        
+       document.getElementById("resultado").innerHTML = resultado + x1 + " e " + x2;
      
       console.log(x1, x2);
         
